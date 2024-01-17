@@ -1,0 +1,173 @@
+.check.active .checkbar {
+  opacity: 1;
+}
+
+.check.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 195 60 / var(--tw-bg-opacity));
+}
+
+.askproject:hover + .asking {
+  max-height: 10000px;
+  opacity: 1;
+  overflow: unset !important;
+}
+
+.period.active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 195 60 / var(--tw-bg-opacity));
+}
+
+.cek:hover .ini {
+  opacity: 1;
+}
+
+.inputBox input:valid ~ label,
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label.req::after,
+.inputBox input:focus ~ label.req::after {
+  --tw-translate-y: -1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(109 114 126 / var(--tw-text-opacity));
+}
+
+/* .inputBox textarea:valid ~ label,
+.inputBox textarea:focus ~ label{
+    @apply -translate-y-5 text-sm
+} */
+
+/* textarea:focus ~ label{
+    @apply -translate-y-5 text-sm
+} */
+
+.inputBox [required] ~ label.req::after {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+  --tw-content: "*";
+  content: var(--tw-content);
+}
+
+input[type=file] {
+  cursor: pointer;
+}
+
+.thisCheck input[type=checkbox] {
+  color: #FEC33C;
+  border-radius: 100px;
+  background-image: none;
+}
+
+.thisCheck input[type=checkbox]:checked {
+  background-image: none;
+}
+
+.thisCheck.active .checkbar {
+  opacity: 1;
+}
+
+input[type=radio] {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 239 / var(--tw-border-opacity));
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+  color: #FEC33C;
+  border-radius: 12px;
+  outline: none;
+  transition-duration: 0.5s;
+}
+
+input[type=radio]:checked {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 239 / var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+input[type=radio]:checked:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+input[type=radio]:checked {
+  background-image: none;
+}
+
+input[type=radio]:checked:focus {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 239 / var(--tw-border-opacity));
+  background-image: none;
+}
+
+input[type=radio]:focus {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 239 / var(--tw-border-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.form-radio:checked:hover {
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 239 / var(--tw-border-opacity));
+}
+
+#labelInput.active {
+  --tw-translate-y: -1.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(109 114 126 / var(--tw-text-opacity));
+}
+
+.file-item {
+  position: relative;
+  display: flex;
+  height: 40px;
+  width: 210px;
+  align-items: center;
+  gap: 11px;
+  overflow: hidden;
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(237 237 239 / var(--tw-border-opacity));
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.file-item-name {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 14px;
+}
+
+.close-button {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.thanks.active {
+  z-index: 50;
+  opacity: 1;
+}

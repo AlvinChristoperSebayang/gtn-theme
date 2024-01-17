@@ -1,0 +1,1 @@
+{"version":3,"file":"dist/css/sub-how-we-work.css","mappings":"AACI,sFAIA,yG","sources":["webpack://ORELY/./resources/sass/pages/sub-how-we-work.scss"],"sourcesContent":[".content-with-image.image-right {\r\n    @apply lg:flex-row-reverse\r\n}\r\n\r\n.expertise-padding {\r\n    @apply pb-[50px] lg:pb-[60px]\r\n}"],"names":[],"sourceRoot":""}

@@ -1,0 +1,9 @@
+.image-zoom {
+    overflow: hidden;
+    border-radius: 1rem
+}
+@media (min-width: 1024px) {
+    .image-zoom {
+        border-radius: 1.5rem
+    }
+}

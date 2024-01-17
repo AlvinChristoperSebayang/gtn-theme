@@ -1,0 +1,216 @@
+.table-of-content a.content-title {
+  font-family: Inter;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.13px;
+  --tw-text-opacity: 1;
+  color: rgb(69 75 87 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+.table-of-content a.content-title.active {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+.table-of-content a.content-title.active::before {
+  display: block;
+  height: 1.5px;
+  width: 1.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 57 166 / var(--tw-bg-opacity));
+  --tw-content: "";
+  content: var(--tw-content);
+}
+.table-of-content.active .contentMobile {
+  z-index: 40;
+  max-height: 1000px;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  opacity: 1;
+}
+.dropdownMobile svg {
+  transition-duration: 500ms;
+}
+.table-of-content.active > .dropdownMobile svg {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.orely-pattern:first-child {
+  padding-bottom: 2.5rem;
+}
+.orely-pattern:not(:first-child):not(:last-child) {
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .orely-pattern:not(:first-child):not(:last-child) {
+    padding-bottom: 56px;
+  }
+}
+.orely-pattern:last-child {
+  padding-bottom: 0px;
+}
+.orely-pattern .wp-block-heading {
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44.8px;
+  --tw-text-opacity: 1;
+  color: rgb(2 11 31 / var(--tw-text-opacity));
+}
+.orely-pattern .orely-qoute-pattern {
+  padding-left: 30px;
+}
+.orely-pattern p {
+  margin-bottom: 0px;
+  padding-bottom: 1.5rem;
+  font-family: SourceSerif4, Source Serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.8px;
+  --tw-text-opacity: 1;
+  color: rgb(2 11 31 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+  .orely-pattern p {
+    padding-bottom: 2rem;
+    font-size: 20px;
+  }
+}
+.orely-pattern p a {
+  font-family: SourceSerif4, Source Serif;
+  text-decoration-line: underline;
+}
+.orely-pattern ol, .orely-pattern ul {
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+  font-family: SourceSerif4, Source Serif;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.1px;
+  --tw-text-opacity: 1;
+  color: rgb(2 11 31 / var(--tw-text-opacity));
+}
+@media (min-width: 1024px) {
+  .orely-pattern ol, .orely-pattern ul {
+    padding-bottom: 2rem;
+    font-size: 20px;
+  }
+}
+.orely-pattern ol li {
+  list-style-type: decimal;
+}
+.orely-pattern ul li {
+  list-style-type: disc;
+}
+.orely-pattern .wp-block-image {
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .orely-pattern .wp-block-image {
+    margin-bottom: 2rem;
+  }
+}
+.orely-pattern img {
+  border-radius: 1rem;
+}
+@media (min-width: 1024px) {
+  .orely-pattern img {
+    border-radius: 1.5rem;
+  }
+}
+.orely-pattern blockquote {
+  position: relative;
+  margin-bottom: 0px;
+  border-left-width: 0px;
+  border-left-color: transparent;
+  padding-left: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .orely-pattern blockquote {
+    padding-bottom: 2rem;
+  }
+}
+.orely-pattern blockquote::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 57 166 / var(--tw-bg-opacity));
+}
+.orely-pattern p:last-child, .orely-pattern ol:last-child, .orely-pattern ul:last-child, .orely-pattern figure:last-child, .orely-pattern blockquote:last-child {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.orely-pattern .wp-block-heading + p {
+  padding-top: 1rem;
+}
+.orely-pattern .wp-block-heading + .wp-block-image {
+  padding-top: 2rem;
+}
+@media screen and (max-width: 1023px) {
+  figure.wp-block-image.orely-image img {
+    border-radius: 16px !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  figure.wp-block-image.orely-image img {
+    border-radius: 20px !important;
+  }
+}
+.orely-quote {
+  padding-bottom: 2.5rem;
+}
+@media (min-width: 1024px) {
+  .orely-quote {
+    padding-bottom: 3.5rem;
+  }
+}
+.orely-quote blockquote {
+  position: relative;
+  border-left-width: 0px;
+  border-left-color: transparent;
+  padding-left: 1.5rem;
+}
+.orely-quote blockquote::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 2px;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 57 166 / var(--tw-bg-opacity));
+}
+.orely-quote p:last-child {
+  padding-left: 1.5rem;
+  padding-top: 2.5rem;
+}
+.orely-image {
+  margin-bottom: 0px;
+}
+.orely-image img {
+  border-radius: 1rem;
+}
+@media (min-width: 1024px) {
+  .orely-image img {
+    border-radius: 1.5rem;
+  }
+}

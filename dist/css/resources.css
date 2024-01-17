@@ -1,0 +1,29 @@
+.resource-content__hidden {
+  left: -100%;
+  max-height: 0px;
+  max-width: 0rem;
+  overflow: hidden;
+  opacity: 0;
+  transition-property: opacity, left, max-width;
+  transition-duration: 0.6s, 0.5s, 0.3s;
+  transition-delay: 0.2s
+}
+.resource-content__show {
+  left: 0px;
+  max-height: 10000px;
+  max-width: 1080px;
+  opacity: 1;
+  transition-property: opacity, left, max-width;
+  transition-duration: 0.6s, 0.5s, 0.3s;
+  transition-delay: 0.5s
+}
+.resource-type-selected:hover {
+  --tw-text-opacity: 1;
+  color: rgb(2 11 31 / var(--tw-text-opacity));
+  transform: none !important
+}
+.dribble-media-linked:hover figure img {
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+}

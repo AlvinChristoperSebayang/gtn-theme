@@ -1,0 +1,109 @@
+@import "component";
+@import "header";
+@import "footer";
+@import "text";
+@import "toastify-js/src/toastify.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* WP Blocks */
+.wp-block-cover {
+    border-radius: 0.25rem;
+}
+
+@layer base {
+
+    html,
+    body {
+        @apply font-body scroll-smooth;
+
+    }
+}
+.current_page_item a{
+   
+}
+.current_page_item{
+    @apply relative;
+    a{
+        @apply font-bold;
+        &::before{
+            @apply absolute -bottom-1 w-4 h-1 rounded-full bg-default left-1/2 -translate-x-1/2;
+            content: '';
+        }
+    }
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a img.alignright {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption-text {
+    @apply text-sm mt-1 font-light;
+}
+
+*[id*="attachment"],
+img,
+iframe {
+    max-width: 100%;
+}
+.circle-ornament{
+    background: radial-gradient(54.12% 54.12% at 50% 50%, #5129A6 0%, rgba(82, 0, 255, 0.00) 100%);
+}
+.pagination_wrapper {
+    .page-numbers{
+        @apply lg:w-14 lg:h-14 border border-default rounded-full flex justify-center items-center duration-300;
+        &:hover{
+            @apply bg-[#2E2952] text-white;
+            svg{
+                path{
+                    stroke: white;
+                }
+            }
+        }
+    }
+    .page-numbers.current{
+        @apply bg-[#2E2952] text-white;
+    }
+}
+.cat_select{
+    background-position: right 0px;
+}
+.single_product_price{
+    color: black !important;
+    .price{
+        color: black !important;
+    }
+    .regular_price{
+        color: #20202080;
+    }
+}

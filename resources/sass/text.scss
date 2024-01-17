@@ -1,0 +1,32 @@
+/**
+ *
+ * Text classes
+ *
+ */
+
+ @layer components {
+   .nav-text{
+    @apply font-normal font-default lg:text-sm text-[#363062] leading-[16.94px] 
+   }
+   .menu-item a{
+    @apply font-normal font-default lg:text-sm text-[#363062] leading-[16.94px]
+   }
+   .main_menu .menu-item a{
+    @apply font-normal font-default lg:text-sm text-white leading-[16.94px]
+   }  
+   p{
+    @apply font-body text-[14px] text-[#b4b3b3] leading-[24px] ;
+   }
+   p.description{
+    @apply text-black;
+   }
+   h1,h2,h3,h4,p,span,a{
+    @apply font-body;
+   }
+   .product-title{
+    @apply lg:text-[18px] text-[14px] text-black font-bold lg:leading-[29.248px] leading-[24px];
+   }
+   .product-category{
+    @apply lg:text-[15.749px] text-[14px] text-[#00000080] font-normal leading-[26.998px];
+   }
+}

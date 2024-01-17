@@ -1,0 +1,10 @@
+.btn_product:hover::after{
+    @apply -rotate-45
+}
+.btn_product::after{
+    @apply duration-300
+}
+
+.first-product__ofTheMonth{
+    @apply self-end
+}

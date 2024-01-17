@@ -1,0 +1,8 @@
+pipelines:
+  branches:
+    mcd:
+      - step:
+          name: Deploy to Vps Mangcoding
+          deployment: Staging
+          script:
+            - ssh mangcoding@139.59.101.230 'cd /var/www/orely/wp-content/themes/wporely && git fetch --all && git checkout mcd && git pull origin mcd'

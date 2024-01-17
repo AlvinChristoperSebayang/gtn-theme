@@ -1,0 +1,37 @@
+.freebies-content p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.14px;
+}
+
+.freebies-scene-gallery img.scene-item.scene-show.scene-active {
+  max-height: 5000px;
+  opacity: 1;
+  overflow: unset !important;
+}
+
+.freebies-scene-gallery img.scene-item.scene-show.scene-active:not(:first-child) {
+  padding-top: 1.5rem;
+}
+
+.popup-submit-form.show-popup, .popup-result-submit.show-popup {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  opacity: 1;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+}
+
+.popup-submit-form.hidden-popup, .popup-result-submit.hidden-popup {
+  z-index: 0;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 5000ms;
+}
